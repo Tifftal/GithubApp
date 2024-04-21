@@ -1,12 +1,12 @@
-@import "../constants.css";
+@import "../constants.module.scss";
 
 .card {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-xl, 24px);
-  border-radius: var(--border-radius, 0px);
-  background: var(--card-bg, #fff);
+  gap: $space-xl;
+  border-radius: $border-radius;
+  background: $card-bg;
   width: 360px;
   height: 560px;
   border-radius: 6px;
@@ -16,8 +16,8 @@
     transition: .1s;
   }
 
-  img {
-    border-radius: var(--border-radius, 0px);
+  .card-image {
+    border-radius: $border-radius $border-radius 0 0;
     background: #d9d9d9;
     width: 100%;
     height: auto;
@@ -26,10 +26,10 @@
 
 .content {
   display: flex;
-  padding: 0px var(--space-xs, 12px);
+  padding: 0px $space-xs;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-l, 20px);
+  gap: $space-l;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@
   -webkit-line-clamp: 1;
   flex: 1 0 0;
   overflow: hidden;
-  color: var(--text-secondary, #afadb5);
+  color: $text-secondary;
   text-overflow: ellipsis;
   font-size: 14px;
   font-style: normal;
@@ -54,7 +54,7 @@
   -webkit-line-clamp: 2;
   flex: 1 0 0;
   overflow: hidden;
-  color: var(--text-primary, #000);
+  color: $text-primary;
   text-overflow: ellipsis;
   font-size: 20px;
   font-style: normal;
@@ -69,7 +69,7 @@
   -webkit-line-clamp: 3;
   flex: 1 0 0;
   overflow: hidden;
-  color: var(--text-secondary, #afadb5);
+  color: $text-secondary;
   text-overflow: ellipsis;
   font-size: 16px;
   font-style: normal;
@@ -78,7 +78,7 @@
 }
 
 .action-content {
-  color: var(--text-primary, #000);
+  color: $text-primary;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -93,6 +93,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: var(--space-xxs, 8px);
+  gap: $space-xxs;
   align-self: stretch;
 }

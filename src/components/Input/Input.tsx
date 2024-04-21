@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export type InputProps = Omit<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -18,7 +18,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   let { value, onChange, afterSlot, className, placeholder, ...other } = props;
 
   return (
-    <div className={classNames("input-container", className)}>
+    <div className={classNames(styles["input-container"], className)}>
       <input
         type="text"
         ref={ref}
@@ -27,7 +27,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         onChange={(e) => onChange(e.target.value)}
         {...other}
       />
-      {afterSlot && <div className="icon">{afterSlot}</div>}
+      {afterSlot && <div className={styles["icon"]}>{afterSlot}</div>}
     </div>
   );
 });

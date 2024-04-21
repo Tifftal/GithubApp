@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import Text from '../Text';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export type CardProps = {
   /** Дополнительный classname */
@@ -34,27 +34,29 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
     ...other
   } = props;
 
+  const classes = classNames(className, styles.card);
+
   return (
-    <div className={classNames(className, 'card')} {...other}>
-      <img style={{borderRadius: "6px 6px 0 0"}} alt='img' src={image} />
-      <div className="content">
-        <div className="text-content">
+    <div className={classes} {...other}>
+      <img className={styles['card-image']} alt='img' src={image} />
+      <div className={styles.content}>
+        <div className={styles["text-content"]}>
           {captionSlot && (
-            <Text view="p-14" className="caption">
+            <Text view="p-14" className={styles.caption} color='secondary'>
               {captionSlot}
             </Text>
           )}
-          <Text maxLines={2} className="card-title">
+          <Text maxLines={2} className={styles["card-title"]}>
             {title}
           </Text>
-          <Text maxLines={3} className="card-subtitle">
+          <Text maxLines={3} className={styles["card-subtitle"]}>
             {subtitle}
           </Text>
         </div>
-        <div className="action">
-          {contentSlot && <Text className="action-content">{contentSlot}</Text>}
+        <div className={styles.action}>
+          {contentSlot && <Text className={styles["action-content"]}>{contentSlot}</Text>}
           {actionSlot && (
-            <div className="button">
+            <div className={styles["button"]}>
               {actionSlot}
             </div>
           )}

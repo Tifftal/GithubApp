@@ -1,36 +1,36 @@
-@import "../constants.css";
+@import "../constants.module.scss";
 
 .select {
   width: 300px;
   display: inline-flex;
   flex-direction: column;
-  gap: var(--space-xxs, 8px);
+  gap: $space-xxs;
   flex-shrink: 0;
   cursor: pointer !important;
 }
 
 .option,
 .option-active {
-  color: var(--text-primary, #000);
+  color: $text-primary;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   display: flex;
   width: 100%;
-  padding: var(--space-s, 14px) var(--space-xs, 12px);
+  padding: $space-s $space-xs;
   align-items: center;
-  gap: var(--space-xxs, 8px);
+  gap: $space-xxs;
   flex-shrink: 0;
-  border-radius: var(--border-radius, 0px);
-  border: 1px solid var(--input-border, #fff);
-  background: var(--input-bg, #fff);
+  border-radius: $border-radius;
+  border: 1px solid $input-border;
+  background: $input-bg;
   cursor: pointer;
 }
 
 .option-active {
-  color: var(--text-accent);
+  color: $text-accent;
 }
 
 .drop-icon {

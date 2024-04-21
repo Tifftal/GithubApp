@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export type TextProps = {
   /** Дополнительный класс */
@@ -27,12 +27,12 @@ const Text: React.FC<TextProps> = ({ tag: Tag = 'p', ...props }) => {
   }
 
   const className = classNames(
-    'text',
-    props.className,
-    props.color,
-    props.view,
-    props.weight,
-    'maxLines'
+    styles.text,
+    styles[props.view || ''],
+    styles[props.weight || ''],
+    styles[props.color || ''],
+    styles.maxLines,
+    props.className
   );
 
   return <Tag className={className}>{props.children}</Tag>;

@@ -1,25 +1,27 @@
+@import '../../../../components/constants.module.scss';
+
 .contributor {
     display: flex;
     align-items: center;
-    gap: var(--space-xxs, 8px);
+    gap: $space-xxs;
   }
   
   .title {
-    color: var(--text-primary, #000);
+    color: $text-primary;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px; /* 122.222% */
+    line-height: 22px;
   }
   
   .login {
-    color: var(--text-primary, #000);
+    color: $text-primary;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 125% */
+    line-height: 20px; 
   }
   
   .logo {

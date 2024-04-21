@@ -1,10 +1,11 @@
 .repContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 92px;
-    margin-right: 111px;
+    padding-left: 92px;
+    padding-right: 111px;
     gap: 24px;
     max-width: 100%;
+    background-color: white;
   }
   
   .logo {
@@ -12,7 +13,6 @@
     height: 40px;
     border-radius: 6px;
     margin-left: 16px;
-    background: lightgray;
   }
   
   .titleContainer {
@@ -21,7 +21,6 @@
     align-items: center;
     max-width: 100%;
     height: 48px;
-    background: #f6f8fa;
   }
   
   .title {

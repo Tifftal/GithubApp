@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ArrowDownIcon from '../icons/ArrowDownIcon';
 import Input from '../Input';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 export type Option = {
   /** Ключ варианта, используется для отправки на бек/использования в коде */
@@ -80,7 +80,7 @@ const MultiDropdown: React.FC<MultiDropdownProps> = (props) => {
   };
 
   return (
-    <div ref={selectRef} className={`select ${className}`} {...other}>
+    <div ref={selectRef} className={`${styles.select} ${className}`} {...other}>
       <Input
         onClick={() => !disabled && setListIsOpen(true)}
         disabled={disabled}
@@ -88,15 +88,15 @@ const MultiDropdown: React.FC<MultiDropdownProps> = (props) => {
         onChange={() => {}}
         placeholder={getTitle(value)}
         afterSlot={
-          <ArrowDownIcon className="drop-icon" color="secondary" onClick={() => !disabled && setListIsOpen(true)} />
+          <ArrowDownIcon className={styles["drop-icon"]} color="secondary" onClick={() => !disabled && setListIsOpen(true)} />
         }
       />
       {listIsOpen && !disabled && (
-        <div className="dropdown-menu">
+        <div className={styles["dropdown-menu"]}>
           {myOptions.map((option) => (
             <div
               key={option.key}
-              className={`option ${activeClass(option)}`}
+              className={`${styles.option} ${activeClass(option)}`}
               onClick={() => {
                 changeCurrentOptions(option);
               }}

@@ -4,7 +4,7 @@ import MainPage from './pages/MainPage/MainPage';
 import RepositoryPage from './pages/RepositoryPage/RepositoryPage';
 import Header from './components/Header';
 
-import './styles/styles.scss';
+import './styles/styles.module.scss';
 
 const App: React.FC = () => {
   const repsString = localStorage.getItem('reps');

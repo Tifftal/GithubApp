@@ -1,3 +1,5 @@
+@import "../../components/constants.module.scss";
+
 .title {
   text-align: center;
   margin-top: 40px;
@@ -10,7 +12,7 @@
   align-items: center;
   height: 18px;
   align-self: stretch;
-  color: var(--text-secondary);
+  color: $text-secondary;
   text-overflow: ellipsis;
   font-family: Roboto;
   font-size: 14px;
@@ -30,7 +32,7 @@
   }
 
   path {
-    fill: var(--star-accent);
+    fill: $star-accent;
   }
 }
 
@@ -66,7 +68,7 @@
 .button {
   margin-left: 19px;
   border-radius: 6px;
-  background: #1f883d;
+  background: $button-primary-bg;
 }
 
 .repsList {

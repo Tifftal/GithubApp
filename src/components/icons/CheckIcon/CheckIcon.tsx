@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Icon, { IconProps } from '../Icon';
-import './styles.css';
+import './styles.module.scss';
 
 const CheckIcon: React.FC<IconProps> = (props) => {
   let { color, ...other } = props;
