@@ -9,8 +9,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
 };
 
-const Button: React.FC<ButtonProps> = (props) => {
-  let { loading, children, onClick, disabled, className, ...other } = props;
+const Button: React.FC<ButtonProps> = ({ loading, children, onClick, disabled, className, ...other }) => {
   return (
     <button
       className={classNames(

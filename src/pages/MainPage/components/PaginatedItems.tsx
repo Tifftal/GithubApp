@@ -8,7 +8,6 @@ import styles from './styles.module.scss';
 
 const PaginatedItems: React.FC<Props> = ({ itemsPerPage, children, condition, repos }) => {
     const [offset, setOffset] = useState(0);
-    console.log(repos, children);
     children = children.filter((child) => {
         //@ts-ignore
         return child && condition(repos[(child as Record<string, object>).key].topics);
