@@ -1,7 +1,7 @@
 import { Props } from "./types";
 
 import styles from "./styles.module.scss"
-import CircleIcon from "../../../../icons/CircleIcon";
+import CircleIcon from "icons/CircleIcon";
 import Contributor from "../Contributor/Contributor";
 
 const Contributors: React.FC<Props> = ({ contributors }) => {

@@ -1,8 +1,8 @@
-import StarIcon from "../../../../icons/StarIcon";
+import StarIcon from "icons/StarIcon";
 import { Props } from "./types";
-import Text from "../../../../components/Text";
-import EyeIcon from "../../../../icons/EyeIcon";
-import ForkIcon from "../../../../icons/ForkIcon";
+import Text from "components/Text";
+import EyeIcon from "icons/EyeIcon";
+import ForkIcon from "icons/ForkIcon";
 
 import styles from "./styles.module.scss";
 

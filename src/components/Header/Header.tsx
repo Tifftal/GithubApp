@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import Text from '../Text';
-import GitHubIcon from '../../icons/GitHubIcon';
-import ProfileIcon from '../../icons/PropfileIcon';
+import GitHubIcon from 'icons/GitHubIcon';
+import ProfileIcon from 'icons/PropfileIcon';
 
 const Header: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Props } from "./types";
 import ReactPaginate from "react-paginate";
-import ArrowRightIcon from "../../../icons/ArrowRight";
-import ArrowLeftIcon from "../../../icons/ArrowLeftIcon";
+import ArrowRightIcon from "icons/ArrowRight";
+import ArrowLeftIcon from "icons/ArrowLeftIcon";
 
 import styles from './styles.module.scss';
 

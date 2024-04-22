@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Props } from "./types";
-import { Map } from "../../../../config/api";
+import { Map } from "config/api";
 import { getData } from "../../api";
 
 import styles from "./styles.module.scss";
-import CircleIcon from "../../../../icons/CircleIcon";
+import CircleIcon from "icons/CircleIcon";
 
 const Languages: React.FC<Props> = ({ languages_url }) => {
     const [languages, setLanguages] = useState<Map>();

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Props } from "./types";
-import { ContributorType } from "../../config/api";
+import { ContributorType } from "config/api";
 import { Link, useParams } from "react-router-dom";
 import { getData } from "./api";
 
 import styles from "./styles.module.scss";
-import ArrowLeftIcon from "../../icons/ArrowLeftIcon";
-import Text from "../../components/Text";
-import LinkIcon from "../../icons/LinkIcon";
+import ArrowLeftIcon from "icons/ArrowLeftIcon";
+import Text from "components/Text";
+import LinkIcon from "icons/LinkIcon";
 import Topics from "./components/Topics";
 import Stats from "./components/Stats";
 import Contributors from "./components/Contributors";

@@ -1,5 +1,5 @@
 import axios from "axios"
-import { api } from "../../config";
+import { api } from "config/api";
 
 export const getData = async (endpoint: string) => {
     try {

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Props } from "./types";
-import Text from "../../components/Text";
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import SearchIcon from "../../icons/SearchIcon";
+import Text from "components/Text";
+import Input from "components/Input";
+import Button from "components/Button";
+import SearchIcon from "icons/SearchIcon";
 import { getRepositories } from "./api";
 import PaginatedItems from "./components/PaginatedItems";
-import Card from "../../components/Card";
+import Card from "components/Card";
 import { Link } from "react-router-dom";
 
 import styles from './styles.module.scss';
-import StarIcon from "../../icons/StarIcon";
-import MultiDropdown from "../../components/MultiDropdown";
+import StarIcon from "icons/StarIcon";
+import MultiDropdown from "components/MultiDropdown";
 
 const MainPage: React.FC<Props> = ({
     repos,

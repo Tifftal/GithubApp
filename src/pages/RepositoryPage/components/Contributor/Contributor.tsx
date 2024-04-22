@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Props } from "./types";
-import { ProfileType } from "../../../../config/api";
+import { ProfileType } from "config/api";
 import { getData } from "../../api";
 
 import styles from "./styles.module.scss";
