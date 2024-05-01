@@ -1,0 +1,98 @@
+@import "../constants.module.scss";
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-xl;
+  border-radius: $border-radius;
+  background: $card-bg;
+  width: 360px;
+  height: 560px;
+  border-radius: 6px;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0px $card-shadow;
+    transition: .1s;
+  }
+
+  .card-image {
+    border-radius: $border-radius $border-radius 0 0;
+    background: $card-image-bg;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.content {
+  display: flex;
+  padding: 0px $space-xs;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-l;
+  width: 100%;
+}
+
+.caption {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: $text-secondary;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; 
+  padding-bottom: 8px;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: $text-primary;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  padding: 0 0 8px 0;
+}
+
+.card-subtitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: $text-secondary;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+}
+
+.action-content {
+  color: $text-primary;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $space-xxs;
+  align-self: stretch;
+}

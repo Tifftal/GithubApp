@@ -1,0 +1,90 @@
+@import "../../components/constants.module.scss";
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.captionSlot {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 18px;
+  align-self: stretch;
+  color: $text-secondary;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+}
+
+.captionStars {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  path {
+    fill: $star-accent;
+  }
+}
+
+.subtitle,
+.notfoundText {
+  color: $text-secondary;
+  text-align: center;
+  margin: 0;
+}
+
+.firstText {
+  margin-top: 30px;
+}
+
+:root {
+  background: $pages-bg;
+}
+
+.topicInput {
+  max-width: 30%;
+  margin: 18px 0 20px 100px;
+}
+
+.orgInput {
+  display: flex;
+  max-width: 100%;
+  margin-left: 100px;
+  margin-right: 206px;
+  margin-bottom: 36px;
+}
+
+.button {
+  margin-left: 19px;
+  border-radius: 6px;
+  background: $button-primary-bg;
+}
+
+.repsList {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  margin: 36px 103px 40px 100px;
+}
+
+.repCard {
+  max-width: 360px;
+
+  @media (max-width: 1475px) {
+    max-width: 270px;
+  }
+
+  @media (max-width: 1205px) {
+    max-width: 360px;
+  }
+}

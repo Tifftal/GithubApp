@@ -1,0 +1,46 @@
+@import '../../../components/constants.module.scss';
+
+.item {
+    align-items: center;
+    color: $text-primary;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    & > a {
+      width: 40px;
+      text-align: center;
+    }
+  }
+  
+  .icon {
+    path {
+      stroke: $pagination-text;
+    }
+    &:active {
+      path {
+        stroke: $button-primary-bg;
+      }
+    }
+  }
+  
+  .active {
+    color: $pagination-text-active;
+    background: $button-primary-bg;
+  }
+  
+  .pagination {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: center;
+    position: relative;
+    width: 1000px;
+  }
+  

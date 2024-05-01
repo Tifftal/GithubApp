@@ -1,0 +1,23 @@
+@import '../constants.module.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 64px;
+  border-bottom: 2px solid $header-border;
+  background: $pages-bg;
+}
+
+.title {
+  margin-left: 24px;
+}
+
+.icon {
+  margin-left: 100px;
+}
+
+.profile {
+  margin-left: auto;
+  margin-right: 103px;
+}

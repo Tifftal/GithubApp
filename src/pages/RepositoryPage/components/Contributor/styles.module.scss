@@ -1,0 +1,40 @@
+@import '../../../../components/constants.module.scss';
+
+.contributor {
+    display: flex;
+    align-items: center;
+    gap: $space-xxs;
+  }
+  
+  .title {
+    color: $text-primary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  
+  .login {
+    color: $text-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+  }
+  
+  .logo {
+    border-radius: 32px;
+    border: 1px solid $contributor-border-color;
+    background: lightgray;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .name {
+    color: $contributor-name-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  

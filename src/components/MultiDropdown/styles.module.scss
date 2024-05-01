@@ -1,0 +1,41 @@
+@import "../constants.module.scss";
+
+.select {
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: $space-xxs;
+  flex-shrink: 0;
+  cursor: pointer !important;
+}
+
+.option,
+.option-active {
+  color: $text-primary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  width: 100%;
+  padding: $space-s $space-xs;
+  align-items: center;
+  gap: $space-xxs;
+  flex-shrink: 0;
+  border-radius: $border-radius;
+  border: 1px solid $input-border;
+  background: $input-bg;
+  cursor: pointer;
+}
+
+.option-active {
+  color: $text-accent;
+}
+
+.drop-icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  box-shadow: 15px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,79 @@
+@import '../constants.module.scss';
+
+.text {
+  &.title {
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 700;
+  }
+
+  &.button {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  &.p-20 {
+    color: $text-primary;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &.p-18 {
+    color: $text-primary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &.p-16 {
+    color: $text-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &.p-14 {
+    color: $text-primary;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &.maxLines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: $maxline-count;
+    -webkit-box-orient: vertical;
+    line-clamp: $maxline-count;
+    box-orient: vertical;
+  }
+
+  &.normal {
+    font-weight: normal;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.primary {
+    color: $text-primary;
+  }
+
+  &.secondary {
+    color: $text-secondary;
+  }
+
+  &.accent {
+    color: $text-accent;
+  }
+}

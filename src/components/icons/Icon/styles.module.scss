@@ -1,0 +1,13 @@
+@import '../../constants.module.scss';
+
+.icon {
+    color: $text-primary; 
+
+    &_accent {
+        color: $text-accent; 
+    }
+
+    &_secondary {
+        color: $text-secondary; 
+    }
+}
