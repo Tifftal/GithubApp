@@ -14,7 +14,6 @@
   align-self: stretch;
   color: $text-secondary;
   text-overflow: ellipsis;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -38,10 +37,9 @@
 
 .subtitle,
 .notfoundText {
-  color: #afadb5;
+  color: $text-secondary;
   text-align: center;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .firstText {
@@ -49,7 +47,7 @@
 }
 
 :root {
-  background: #f6f8fa;
+  background: $pages-bg;
 }
 
 .topicInput {

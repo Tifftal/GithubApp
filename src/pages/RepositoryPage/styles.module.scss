@@ -1,3 +1,5 @@
+@import '../../components/constants.module.scss';
+
 .repContainer {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@
     padding-right: 111px;
     gap: 24px;
     max-width: 100%;
-    background-color: white;
+    background-color: $pages-bg-other;
   }
   
   .logo {
@@ -26,11 +28,11 @@
   .title {
     margin-left: 16px;
     padding-bottom: 4px;
-    color: black;
+    color: $text-primary;
   }
   
   .link {
-    color: #0080ff;
+    color: $link-color;
     font-size: 20px;
     line-height: 25px;
     display: flex;

@@ -1,3 +1,5 @@
+@import '../../../../components/constants.module.scss';
+
 .contributors {
     display: flex;
     width: fit-content;
@@ -7,7 +9,7 @@
   }
   
   .contributorTitle {
-    color: #000;
+    color: $text-primary;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -19,12 +21,17 @@
   }
   
   .contributorsNumber {
-    color: rgba(0, 0, 0, 0.62);
-    font-size: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: $contributor-count-color;
+    font-size: 10px;
     font-style: normal;
     font-weight: 600;
-    line-height: 10px; 
-    flex-shrink: 0;
-    margin-left: -17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $contributor-count-bg;
   }
   

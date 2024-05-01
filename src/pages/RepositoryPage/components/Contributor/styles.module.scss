@@ -26,14 +26,14 @@
   
   .logo {
     border-radius: 32px;
-    border: 1px solid #ecebeb;
+    border: 1px solid $contributor-border-color;
     background: lightgray;
     width: 32px;
     height: 32px;
   }
   
   .name {
-    color: #afadb5;
+    color: $contributor-name-color;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;

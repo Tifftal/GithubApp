@@ -12,7 +12,7 @@ input {
   background: transparent;
   outline: none;
   &::placeholder {
-    color: #afadb5;
+    color: $input-placeholder;
   }
 }
 
@@ -40,7 +40,7 @@ input {
   }
 
   &::placeholder {
-    color: #afadb5;
+    color: $input-placeholder;
   }
 }
 
