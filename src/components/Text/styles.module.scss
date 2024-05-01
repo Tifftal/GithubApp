@@ -2,14 +2,12 @@
 
 .text {
   &.title {
-    font-family: Roboto;
     font-size: 44px;
     line-height: 48px;
     font-weight: 700;
   }
 
   &.button {
-    font-family: Roboto;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -17,7 +15,6 @@
 
   &.p-20 {
     color: $text-primary;
-    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -26,7 +23,6 @@
 
   &.p-18 {
     color: $text-primary;
-    font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -35,7 +31,6 @@
 
   &.p-16 {
     color: $text-primary;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +39,6 @@
 
   &.p-14 {
     color: $text-primary;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
