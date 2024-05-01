@@ -42,7 +42,6 @@
   color: $text-secondary;
   text-overflow: ellipsis;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px; 
   padding-bottom: 8px;
@@ -57,7 +56,6 @@
   color: $text-primary;
   text-overflow: ellipsis;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px; 
   padding: 0 0 8px 0;
@@ -72,15 +70,12 @@
   color: $text-secondary;
   text-overflow: ellipsis;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px; 
 }
 
 .action-content {
   color: $text-primary;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 22px; 
   display: flex;
